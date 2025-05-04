@@ -180,3 +180,49 @@ Robust authentication using JWT and role-based access control ensures secure log
 
 ### 🌐 Search & Filtering
 Users can search for listings by city, date, price range, and amenities. This enhances discoverability and improves the user experience for guests looking for specific accommodations.
+
+
+## 🔐 API Security
+
+Security is a critical component of any web application, especially one handling sensitive user data and financial transactions like the Airbnb Clone. Below are the key security measures that will be implemented to ensure the protection and integrity of the platform.
+
+### 🔑 Authentication
+We will implement secure user authentication using JSON Web Tokens (JWT). This ensures that only registered users can access protected routes and functionalities. Authentication helps prevent unauthorized access and secures user sessions.
+
+**Why it matters:** Protects user accounts and prevents impersonation or unauthorized actions within the application.
+
+---
+
+### 🛡️ Authorization
+Role-based access control (RBAC) will be enforced to determine what actions each user type (guest, host, admin) can perform. For example, only hosts can manage properties, and only guests can make bookings.
+
+**Why it matters:** Prevents privilege escalation and ensures users can only access features relevant to their roles.
+
+---
+
+### 🚫 Rate Limiting
+To prevent abuse and denial-of-service (DoS) attacks, rate limiting will be applied to the API endpoints. This limits the number of requests a user or IP can make in a given period.
+
+**Why it matters:** Mitigates the risk of brute-force attacks, spamming, and system overload.
+
+---
+
+### 🔐 Data Validation & Sanitization
+All incoming data will be validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This ensures that only safe and expected data enters the system.
+
+**Why it matters:** Prevents common vulnerabilities that could compromise the database and user information.
+
+---
+
+### 🧾 Secure Payments
+Payment transactions will be securely handled using encrypted communication (e.g., HTTPS) and integration with trusted third-party gateways (like Stripe or PayPal).
+
+**Why it matters:** Ensures financial data is transmitted safely, protecting both the platform and its users from fraud.
+
+---
+
+### 📄 HTTPS Enforcement
+All traffic between clients and the server will be encrypted via HTTPS using SSL/TLS certificates.
+
+**Why it matters:** Protects data in transit from being intercepted or tampered with by attackers.
+
