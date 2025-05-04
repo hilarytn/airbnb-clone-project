@@ -13,16 +13,6 @@ The **Airbnb Clone Project** is a full-stack web application inspired by the cor
 - Automate deployment using modern CI/CD tools like GitHub Actions and Docker.
 - Learn to document and plan complex software systems.
 
-## Technology Stack
-
-- **Backend Framework**: Django (Python)
-- **Database**: MySQL
-- **API**: Django REST Framework or GraphQL
-- **Containerization**: Docker
-- **CI/CD**: GitHub Actions
-- **Version Control**: Git & GitHub
-- **Other Tools**: Markdown for documentation, Postman for API testing
-
 ## 👥 Team Roles
 
 The success of this project depends on a collaborative team, each contributing distinct skills and responsibilities. Below are the key roles and their contributions to the Airbnb Clone Project:
@@ -41,3 +31,32 @@ Sets up and maintains the CI/CD pipeline using GitHub Actions and Docker. Respon
 
 ### 🧪 QA Engineer / Tester
 Writes and executes test plans to ensure features function as intended. Performs unit, integration, and end-to-end testing. Validates performance, usability, and security aspects of the application.
+
+
+## 🧰 Technology Stack
+
+Below is an overview of the core technologies used in the Airbnb Clone Project, along with their specific roles in building a scalable and secure web application.
+
+### 🐍 Django
+A high-level Python web framework used to build the server-side logic of the application. Django enables rapid development of RESTful APIs, supports authentication, and follows the MVC (Model-View-Controller) architectural pattern.
+
+### 🐬 MySQL
+A relational database management system used to store and manage structured data for the platform, such as user accounts, property listings, bookings, and reviews. It supports ACID compliance, indexing, and complex relational queries.
+
+### 🔗 GraphQL
+A query language for APIs that allows clients to request only the data they need. It improves performance and flexibility over REST by enabling nested queries and real-time data fetching.
+
+### 🐳 Docker
+A containerization platform used to package the application and its dependencies into isolated environments. It ensures consistent development and deployment across different machines and cloud providers.
+
+### 🔄 GitHub Actions
+A CI/CD automation tool that runs tests, lints code, and deploys changes automatically whenever updates are pushed to the repository. It streamlines the development workflow and reduces human error during deployment.
+
+### 🛠️ Git & GitHub
+Version control and code collaboration tools used to manage changes to the project, coordinate team development, and maintain transparency throughout the software lifecycle.
+
+### 📦 Postman
+An API client tool used to test API endpoints, validate response data, and simulate client-server interactions during development and debugging.
+
+### 🐚 Markdown
+A lightweight markup language used for writing project documentation, including the `README.md`, setup guides, and API docs in a human-readable format.
