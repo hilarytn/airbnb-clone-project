@@ -226,3 +226,19 @@ All traffic between clients and the server will be encrypted via HTTPS using SSL
 
 **Why it matters:** Protects data in transit from being intercepted or tampered with by attackers.
 
+
+## 🚀 CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for streamlining the software development lifecycle. They automate the process of testing, building, and deploying code, ensuring that updates are delivered quickly, consistently, and reliably.
+
+### 🛠️ Why CI/CD Matters
+- **Consistency**: Automatically tests and deploys code, reducing the chance of human error.
+- **Speed**: Enables rapid deployment of new features and bug fixes without manual intervention.
+- **Feedback**: Provides immediate feedback on code quality through automated tests.
+- **Reliability**: Ensures that only tested and validated code is deployed to production.
+
+### 🧰 Tools Used
+- **GitHub Actions**: For automating workflows such as testing and deployment on each push or pull request.
+- **Docker**: For containerizing the application, ensuring consistent environments across development, staging, and production.
+- **Amazon Web Service - AWS** : For hosting and deployment of the application.
+- **Pytest / Django Test Framework**: For running automated backend tests.
