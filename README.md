@@ -60,3 +60,97 @@ An API client tool used to test API endpoints, validate response data, and simul
 
 ### 🐚 Markdown
 A lightweight markup language used for writing project documentation, including the `README.md`, setup guides, and API docs in a human-readable format.
+
+
+## 🗃️ Database Design
+
+This section outlines the core entities of the Airbnb Clone project and their relationships. The database is designed using a relational model (MySQL), optimized for scalability and data integrity.
+
+### 👤 Users
+Represents registered users of the platform (guests or hosts).
+
+**Key Fields:**
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `user_type` (guest or host)
+
+**Relationships:**
+- A user can host multiple properties.
+- A user can make multiple bookings.
+- A user can write multiple reviews.
+
+---
+
+### 🏠 Properties
+Represents the listings created by hosts for rent.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+- `host_id` (Foreign Key to Users)
+
+**Relationships:**
+- A property is owned by a user (host).
+- A property can have multiple bookings.
+- A property can have multiple reviews.
+
+---
+
+### 📅 Bookings
+Captures booking transactions made by guests for a property.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `start_date`
+- `end_date`
+- `status` (e.g., confirmed, cancelled)
+
+**Relationships:**
+- A booking is made by a user for a specific property.
+- A booking can have one payment.
+
+---
+
+### 💳 Payments
+Stores payment information related to bookings.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `booking_id` (Foreign Key to Bookings)
+- `amount`
+- `payment_method`
+- `payment_status`
+
+**Relationships:**
+- A payment is associated with one booking.
+
+---
+
+### ✍️ Reviews
+Represents user-generated feedback for properties.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `rating` (1–5)
+- `comment`
+
+**Relationships:**
+- A review is written by a user for a specific property.
+
+---
+
+### 🔗 Entity Relationships Summary
+
+- One **User** can have many **Properties** (if the user is a host).
+- One **User** can have many **Bookings** and **Reviews** (as a guest).
+- One **Property** can have many **Bookings** and **Reviews**.
+- One **Booking** has one **Payment**.
