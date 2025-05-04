@@ -154,3 +154,29 @@ Represents user-generated feedback for properties.
 - One **User** can have many **Bookings** and **Reviews** (as a guest).
 - One **Property** can have many **Bookings** and **Reviews**.
 - One **Booking** has one **Payment**.
+
+
+## ✨ Feature Breakdown
+
+The Airbnb Clone Project consists of several core features that replicate the functionality of a real-world booking platform. Each feature contributes to delivering a seamless experience for both guests and hosts.
+
+### 👤 User Management
+This feature handles user registration, login, authentication, and profile management. It allows users to sign up as either a host or a guest, with secure access to their personalized dashboard and activity history.
+
+### 🏡 Property Management
+Hosts can create, update, and delete property listings. Each listing includes details such as location, description, price, and images, enabling hosts to showcase their offerings and attract bookings.
+
+### 📅 Booking System
+Guests can search for available properties based on date, location, and price, then make bookings. This system manages availability checks, prevents double bookings, and tracks reservation history for both hosts and guests.
+
+### 💳 Payment Integration
+Secure payment functionality is integrated to handle booking transactions. Guests can pay using different methods, and hosts receive payouts, ensuring a smooth financial workflow.
+
+### ✍️ Review & Rating System
+After a booking is completed, guests can rate and review the property. Reviews help maintain quality and trust on the platform and allow future guests to make informed decisions.
+
+### 🔐 Authentication & Authorization
+Robust authentication using JWT and role-based access control ensures secure login and restricts access based on user roles (e.g., only hosts can manage listings).
+
+### 🌐 Search & Filtering
+Users can search for listings by city, date, price range, and amenities. This enhances discoverability and improves the user experience for guests looking for specific accommodations.
