@@ -23,14 +23,21 @@ The **Airbnb Clone Project** is a full-stack web application inspired by the cor
 - **Version Control**: Git & GitHub
 - **Other Tools**: Markdown for documentation, Postman for API testing
 
-## Repository Setup
+## 👥 Team Roles
 
-This repository serves as the central codebase for the Airbnb Clone project. All future development, collaboration, and documentation will be tracked here.
+The success of this project depends on a collaborative team, each contributing distinct skills and responsibilities. Below are the key roles and their contributions to the Airbnb Clone Project:
 
----
+### 🔧 Backend Developer
+Responsible for designing and implementing the server-side logic, APIs, and core functionality using Django. Ensures business logic aligns with user workflows and integrates smoothly with the database and frontend.
 
-## Getting Started
+### 🗄️ Database Administrator (DBA)
+Designs and manages the relational database schema using MySQL. Handles data modeling, relationships, indexing, backup procedures, and ensures data integrity and performance.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/hilarytn/airbnb-clone-project.git
+### 🔐 Security Engineer
+Implements security protocols to safeguard APIs and user data. Responsibilities include securing endpoints, handling authentication (e.g., token-based systems), authorization, and mitigating common vulnerabilities like SQL injection and XSS.
+
+### 🚢 DevOps Engineer
+Sets up and maintains the CI/CD pipeline using GitHub Actions and Docker. Responsible for automating deployment, monitoring build health, and ensuring that code changes flow seamlessly from development to production.
+
+### 🧪 QA Engineer / Tester
+Writes and executes test plans to ensure features function as intended. Performs unit, integration, and end-to-end testing. Validates performance, usability, and security aspects of the application.
